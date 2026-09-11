@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* body {
+} */
+
+.App {
+  padding: 100px;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.input > input {
+  border: none;
+  height: 2.5rem;
+  outline: none;
+  font-size: 16px;
+  width: 90%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 3.5rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow: scroll;
+}
+
+@keyframes animation1 {
+  from {
+    transform: translate(20px, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.card {
+  height: 40%;
+  width: calc((100% - 60px) / 3);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+
+  animation-name: animation1;
+  animation-fill-mode: both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.card > img {
+  height: 50%;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card_info {
+  height: 50%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+/* .card_info */
+
+@media screen and (max-width: 600px) {
+  .App {
+    /* padding-top:; */
+    padding: 40px 0px;
+  }
+
+  .App > input {
+    width: 85%;
+  }
+  .cards {
+    gap: 50px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card > img {
+    height: 50%;
+  }
+
+  .card_info {
+    height: 50%;
+  }
+}
