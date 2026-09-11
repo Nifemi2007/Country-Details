@@ -7,7 +7,7 @@ function Card({ image, country, capital, currency, symbol }) {
         <p>Capital: {capital}</p>
 
         <p>
-          Currency: {currency} ({symbol})
+          Currency: {currency} - {symbol}
         </p>
       </div>
     </div>
