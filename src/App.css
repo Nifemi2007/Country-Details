@@ -96,7 +96,7 @@
     padding: 40px 0px;
   }
 
-  .App > input {
+  .App > .input {
     width: 85%;
   }
   .cards {

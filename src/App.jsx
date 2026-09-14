@@ -26,7 +26,7 @@ function App() {
     }
   }, [searchValue]);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="App">
